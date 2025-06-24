@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+db.sqlite3
+media/
+staticfiles/
+static/
+local_settings.py
+
+# Migrations (optional — если хочешь игнорировать)
+**/migrations/*.py
+!**/migrations/__init__.py
+**/migrations/*.pyc
+
+# Secret files
+.env
+.env.*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# pip
+pip-log.txt
+
+# MyPy / coverage / testing
+.mypy_cache/
+.coverage
+.tox/
+htmlcov/
+.pytest_cache/
+
+# Python wheels
+*.whl
+
+# Jupyter / IPython
+.ipynb_checkpoints
+
+# Cache
+*.cache
+.cache/
