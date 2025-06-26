@@ -94,6 +94,7 @@ class ProductService:
         print(f"[*] Updating search query: {query}")
         parsed_data = self.parser.parse(query)
         print('Data length: ' + len(parsed_data).__str__())
+        print('Unique products: ' + len(set(d['product_id'] for d in parsed_data)).__str__())
 
         Product.objects.filter(queryproduct__query=search_obj).delete()
         QueryProduct.objects.filter(query=search_obj).delete()

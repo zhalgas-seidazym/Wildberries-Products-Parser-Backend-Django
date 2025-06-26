@@ -25,7 +25,6 @@ class ProductListView(generics.ListAPIView):
         query = self.request.query_params.get("query")
         if not query:
             return Product.objects.none()
-        print("query", query)
 
         parser = ParserService()
         product_service = ProductService(parser)
